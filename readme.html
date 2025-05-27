@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>readme / cord vc</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="favicon_clean.ico" type="image/x-icon">
-  <style>
+<meta charset="utf-8"/>
+<title>readme / cord vc</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="favicon_clean.ico" rel="icon" type="image/x-icon"/>
+<style>
     html, body {
       margin: 0;
       padding: 40px 20px;
@@ -37,30 +38,60 @@
       margin-top: 24px;
       color: #ffffff;
     }
-  </style>
+  
+.logo-container {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-title {
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 2px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 32px;
+  }
+
+  .logo-title {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+}
+</style>
 </head>
-<body>
-  <img src="logo_stripes.png" alt="Cord VC" class="logo" />
-
-  <pre>
-<strong>cord vc</strong>
-
-<strong>01 — what we do</strong>
+<body><div class="logo-container"><img alt="Cord VC" class="logo" src="logo_stripes.png"/><div class="logo-title">cord vc</div></div>
+<pre>
+01 — what we do
 we invest in foundations—energy, materials, compute, and data—and in the applications built on top.
 some bets compound over time. others move quickly.
 we work across both with the fluency, focus, and context each layer demands.
 
-<strong>02 — how we work</strong>
+02 — how we work
 we invest early and with conviction.
 we move quickly and bring practical, hard-won experience.
 we stay close to the work and build long-term relationships with the teams we back.
 
-<strong>03 — who we are</strong>
+03 — who we are
 cord is led by a repeat builder with experience taking products from idea to scaled outcomes.
 we started this fund to support teams solving meaningful problems and building the next generation of systems.
 
-<strong>04 — get in touch</strong>
-founders and LPs → partner@cordvc.com
-  </pre>
+04 — get in touch
+founders and LPs → partner@cordvc.com</pre>
 </body>
 </html>

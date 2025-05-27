@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Cord VC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="favicon_clean.ico" type="image/x-icon">
-  <style>
+<meta charset="utf-8"/>
+<title>Cord VC</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="favicon_clean.ico" rel="icon" type="image/x-icon"/>
+<style>
     html, body {
       margin: 0;
       padding: 0;
@@ -89,24 +90,39 @@
         padding: 10px 20px;
       }
     }
-  </style>
+  
+.logo-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.logo {
+  width: 64px;
+  max-width: 18vw;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 40px;
+  }
+}
+</style>
 </head>
-<body>
-
+<body><a class="logo-link" href="index.html"><img alt="Cord VC Logo" class="logo" src="logo_stripes.png"/></a>
 <header>
-  <h1>cord vc</h1>
-  <p>foundations || applications</p>
-  <a href="readme.html" class="button" target="_blank">readme</a>
+<h1>cord vc</h1>
+<p>foundations || applications</p>
+<a class="button" href="readme.html" target="_blank">readme</a>
 </header>
-
 <div id="canvas-container">
-  <canvas id="canvas"></canvas>
+<canvas id="canvas"></canvas>
 </div>
-
 <footer>
   © 2025 Cord VC. All rights reserved.
 </footer>
-
 <script>
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
